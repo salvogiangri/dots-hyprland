@@ -42,7 +42,7 @@ ShellRoot {
     property bool enableReloadPopup: true
     property bool enableScreenCorners: true
     property bool enableSession: true
-    property bool enableSidebarLeft: true
+    property bool enableSidebarLeft: false
     property bool enableSidebarRight: true
 
     // Force initialization of some singletons
