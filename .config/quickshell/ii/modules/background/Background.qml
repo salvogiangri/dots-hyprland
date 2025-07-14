@@ -163,57 +163,6 @@ Scope {
                     width: bgRoot.screen.width * bgRoot.effectiveWallpaperScale
                     height: bgRoot.screen.height * bgRoot.effectiveWallpaperScale
                 }
-
-                // The clock
-                Item {
-                    id: clock
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                        leftMargin: ((root.fixedClockPosition ? root.fixedClockX : bgRoot.clockX * bgRoot.effectiveWallpaperScale) - implicitWidth / 2)
-                        topMargin: ((root.fixedClockPosition ? root.fixedClockY : bgRoot.clockY * bgRoot.effectiveWallpaperScale) - implicitHeight / 2)
-                        Behavior on leftMargin {
-                            animation: Appearance.animation.elementMove.numberAnimation.createObject(this)
-                        }
-                        Behavior on topMargin {
-                            animation: Appearance.animation.elementMove.numberAnimation.createObject(this)
-                        }
-                    }
-
-                    implicitWidth: clockColumn.implicitWidth
-                    implicitHeight: clockColumn.implicitHeight
-
-                    ColumnLayout {
-                        id: clockColumn
-                        anchors.centerIn: parent
-                        spacing: -5
-
-                        StyledText {
-                            Layout.fillWidth: true
-                            horizontalAlignment: bgRoot.textHorizontalAlignment
-                            font {
-                                pixelSize: 90
-                                weight: Font.Bold
-                            }
-                            color: bgRoot.colText
-                            style: Text.Raised
-                            styleColor: Appearance.colors.colShadow
-                            text: DateTime.time
-                        }
-                        StyledText {
-                            Layout.fillWidth: true
-                            horizontalAlignment: bgRoot.textHorizontalAlignment
-                            font {
-                                pixelSize: 20
-                                weight: Font.DemiBold
-                            }
-                            color: bgRoot.colText
-                            style: Text.Raised
-                            styleColor: Appearance.colors.colShadow
-                            text: DateTime.date
-                        }
-                    }
-                }
             }
         }
     }
