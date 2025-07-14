@@ -41,6 +41,7 @@ MouseArea {
             font.pixelSize: Appearance.font.pixelSize.small
             color: Appearance.colors.colOnLayer1
             text: Weather.data?.temp ?? "--°"
+            font.weight: Font.DemiBold
             Layout.alignment: Qt.AlignVCenter
         }
     }

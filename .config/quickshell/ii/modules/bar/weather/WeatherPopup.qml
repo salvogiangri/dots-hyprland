@@ -34,7 +34,7 @@ StyledPopup {
             StyledText {
                 text: Weather.data.city
                 font {
-                    weight: Font.Medium
+                    weight: Font.DemiBold
                     pixelSize: Appearance.font.pixelSize.normal
                 }
                 color: Appearance.colors.colOnSurfaceVariant
