@@ -140,13 +140,13 @@ XftHintStyle=hintslight
 TerminalApplication=kitty -1
 XftSubPixel=none
 fixed=JetBrainsMono Nerd Font,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-font=Rubik,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-menuFont=Rubik,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-smallestReadableFont=Rubik,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
-toolBarFont=Rubik,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+font=SF Pro Display,11,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+menuFont=SF Pro Display,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+smallestReadableFont=SF Pro Display,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+toolBarFont=SF Pro Display,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 
 [Icons]
-Theme=breeze-dark
+Theme=Colloid-Dark
 
 [KFileDialog Settings]
 Allow Expansion=false
@@ -174,7 +174,7 @@ Theme=freedesktop
 [WM]
 activeBackground=54,52,58
 activeBlend=252,252,252
-activeFont=Rubik,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
+activeFont=SF Pro Display,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 activeForeground=230,224,233
 inactiveBackground=76,70,90
 inactiveBlend=161,169,177
