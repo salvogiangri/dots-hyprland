@@ -35,7 +35,7 @@ Item {
             text: root.focusingThisMonitor && root.activeWindow?.activated && root.biggestWindow ? 
                 root.activeWindow?.appId :
                 (root.biggestWindow?.class) ?? Translation.tr("Desktop")
-
+            font.weight: Font.DemiBold
         }
 
         StyledText {
