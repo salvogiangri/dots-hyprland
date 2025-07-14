@@ -47,7 +47,7 @@ ShellRoot {
     property bool enableReloadPopup: true
     property bool enableScreenCorners: true
     property bool enableSessionScreen: true
-    property bool enableSidebarLeft: true
+    property bool enableSidebarLeft: false
     property bool enableSidebarRight: true
     property bool enableVerticalBar: true
     property bool enableWallpaperSelector: true
