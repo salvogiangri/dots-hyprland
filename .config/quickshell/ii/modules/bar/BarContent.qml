@@ -390,7 +390,11 @@ Item { // Bar content region
                     Layout.fillHeight: true
                     active: Config.options.bar.weather.enable
                     sourceComponent: BarGroup {
-                        implicitHeight: Appearance.sizes.baseBarHeight
+                        anchors {
+                            fill: parent
+                            topMargin: 4
+                            bottomMargin: 4
+                        }
                         WeatherBar {}
                     }
                 }
