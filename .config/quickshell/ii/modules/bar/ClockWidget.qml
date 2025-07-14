@@ -19,23 +19,18 @@ Item {
         spacing: 4
 
         StyledText {
-            font.pixelSize: Appearance.font.pixelSize.large
-            color: Appearance.colors.colOnLayer1
-            text: DateTime.time
-        }
-
-        StyledText {
-            visible: root.showDate
-            font.pixelSize: Appearance.font.pixelSize.small
-            color: Appearance.colors.colOnLayer1
-            text: "•"
-        }
-
-        StyledText {
             visible: root.showDate
             font.pixelSize: Appearance.font.pixelSize.small
             color: Appearance.colors.colOnLayer1
             text: DateTime.date
+            font.weight: 600
+        }
+
+        StyledText {
+            font.pixelSize: Appearance.font.pixelSize.small
+            color: Appearance.colors.colOnLayer1
+            text: DateTime.time
+            font.weight: 600
         }
     }
 
