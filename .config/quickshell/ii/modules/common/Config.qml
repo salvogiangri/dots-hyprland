@@ -55,8 +55,8 @@ Singleton {
         JsonAdapter {
             id: configOptionsJsonAdapter
             property JsonObject policies: JsonObject {
-                property int ai: 1 // 0: No | 1: Yes | 2: Local
-                property int weeb: 1 // 0: No | 1: Open | 2: Closet
+                property int ai: 0 // 0: No | 1: Yes | 2: Local
+                property int weeb: 0 // 0: No | 1: Open | 2: Closet
             }
 
             property JsonObject ai: JsonObject {
@@ -65,8 +65,8 @@ Singleton {
 
             property JsonObject appearance: JsonObject {
                 property bool extraBackgroundTint: true
-                property int fakeScreenRounding: 2 // 0: None | 1: Always | 2: When not fullscreen
-                property bool transparency: false
+                property int fakeScreenRounding: 0 // 0: None | 1: Always | 2: When not fullscreen
+                property bool transparency: true
                 property JsonObject wallpaperTheming: JsonObject {
                     property bool enableAppsAndShell: true
                     property bool enableQtApps: true
@@ -112,29 +112,29 @@ Singleton {
                 property int cornerStyle: 0 // 0: Hug | 1: Float | 2: Plain rectangle
                 property bool borderless: false // true for no grouping of items
                 property string topLeftIcon: "spark" // Options: distro, spark
-                property bool showBackground: true
+                property bool showBackground: false
                 property bool verbose: true
                 property JsonObject resources: JsonObject {
-                    property bool alwaysShowSwap: true
+                    property bool alwaysShowSwap: false
                     property bool alwaysShowCpu: false
                 }
                 property list<string> screenList: [] // List of names, like "eDP-1", find out with 'hyprctl monitors' command
                 property JsonObject utilButtons: JsonObject {
-                    property bool showScreenSnip: true
+                    property bool showScreenSnip: false
                     property bool showColorPicker: false
                     property bool showMicToggle: false
-                    property bool showKeyboardToggle: true
-                    property bool showDarkModeToggle: true
+                    property bool showKeyboardToggle: false
+                    property bool showDarkModeToggle: false
                     property bool showPerformanceProfileToggle: false
                 }
                 property JsonObject tray: JsonObject {
-                    property bool monochromeIcons: true
+                    property bool monochromeIcons: false
                 }
                 property JsonObject workspaces: JsonObject {
                     property bool monochromeIcons: true
                     property int shown: 10
-                    property bool showAppIcons: true
-                    property bool alwaysShowNumbers: false
+                    property bool showAppIcons: false
+                    property bool alwaysShowNumbers: true
                     property int showNumberDelay: 300 // milliseconds
                 }
                 property JsonObject weather: JsonObject {
@@ -154,11 +154,11 @@ Singleton {
             }
 
             property JsonObject dock: JsonObject {
-                property bool enable: false
-                property bool monochromeIcons: true
+                property bool enable: true
+                property bool monochromeIcons: false
                 property real height: 60
                 property real hoverRegionHeight: 2
-                property bool pinnedOnStartup: false
+                property bool pinnedOnStartup: true
                 property bool hoverToReveal: true // When false, only reveals on empty workspace
                 property list<string> pinnedApps: [ // IDs of pinned entries
                     "org.kde.dolphin", "kitty",]
@@ -234,7 +234,7 @@ Singleton {
             property JsonObject time: JsonObject {
                 // https://doc.qt.io/qt-6/qtime.html#toString
                 property string format: "hh:mm"
-                property string dateFormat: "ddd, dd/MM"
+                property string dateFormat: "ddd dd MMM"
             }
 
             property JsonObject windows: JsonObject {
