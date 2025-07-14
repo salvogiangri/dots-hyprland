@@ -29,6 +29,7 @@ Rectangle {
             }
             StyledText {
                 id: title
+                font.weight: 600
                 font.pixelSize: Appearance.font.pixelSize.smaller
                 color: Appearance.colors.colOnLayer1
             }

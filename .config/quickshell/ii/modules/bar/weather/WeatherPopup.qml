@@ -39,6 +39,7 @@ Rectangle {
             StyledText {
                 text: Weather.data.city
                 font.pixelSize: Appearance.font.pixelSize.title
+                font.weight: 600
                 font.family: Appearance.font.family.title
                 color: Appearance.colors.colOnLayer0
             }
