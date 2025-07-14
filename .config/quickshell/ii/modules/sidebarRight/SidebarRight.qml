@@ -123,6 +123,7 @@ Scope {
                                 color: Appearance.colors.colOnLayer0
                                 text: Translation.tr("Uptime: %1").arg(DateTime.uptime)
                                 textFormat: Text.MarkdownText
+                                font.weight: 600
                             }
 
                             Item {
