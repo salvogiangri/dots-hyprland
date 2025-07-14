@@ -30,6 +30,7 @@ Rectangle {
             }
             StyledText {
                 id: title
+                font.weight: Font.DemiBold
                 font.pixelSize: Appearance.font.pixelSize.smaller
                 color: Appearance.colors.colOnSurfaceVariant
             }
