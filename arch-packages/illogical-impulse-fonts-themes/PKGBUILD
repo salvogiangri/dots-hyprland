@@ -18,10 +18,10 @@ depends=(
   kitty
   matugen-bin
   starship
+  ttf-apple-emoji
   ttf-gabarito-git
   ttf-material-symbols-variable-git
   ttf-meslo-nerd-font-powerlevel10k
   ttf-readex-pro
   ttf-rubik-vf
-  ttf-twemoji
 )
