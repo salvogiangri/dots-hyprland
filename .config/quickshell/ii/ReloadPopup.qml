@@ -78,7 +78,7 @@ Scope {
 
 					Text {
 						renderType: Text.NativeRendering
-						font.family: "Rubik"
+						font.family: "SF Pro Display"
 						font.pointSize: 14
 						text: root.failed ? "Quickshell: Reload failed" : "Quickshell reloaded"
 						color: failed ? "#ff93000A" : "#ff0C1F13"
