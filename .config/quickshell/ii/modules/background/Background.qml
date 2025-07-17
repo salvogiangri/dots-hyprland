@@ -198,7 +198,6 @@ Scope {
                             Layout.fillWidth: true
                             horizontalAlignment: bgRoot.textHorizontalAlignment
                             font {
-                                family: Appearance.font.family.expressive
                                 pixelSize: 90
                                 weight: Font.Bold
                             }
@@ -212,7 +211,6 @@ Scope {
                             Layout.topMargin: -5
                             horizontalAlignment: bgRoot.textHorizontalAlignment
                             font {
-                                family: Appearance.font.family.expressive
                                 pixelSize: 20
                                 weight: Font.DemiBold
                             }
