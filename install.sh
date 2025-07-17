@@ -110,8 +110,6 @@ metapkgs=(./arch-packages/illogical-impulse-{audio,backlight,basic,fonts-themes,
 metapkgs+=(./arch-packages/illogical-impulse-hyprland)
 metapkgs+=(./arch-packages/illogical-impulse-microtex-git)
 # metapkgs+=(./arch-packages/illogical-impulse-oneui4-icons-git)
-[[ -f /usr/share/icons/Bibata-Modern-Classic/index.theme ]] || \
-  metapkgs+=(./arch-packages/illogical-impulse-bibata-modern-classic-bin)
 
 for i in "${metapkgs[@]}"; do
 	metainstallflags="--needed"
@@ -246,7 +244,6 @@ warn_files=()
 warn_files_tests=()
 warn_files_tests+=(/usr/local/lib/{GUtils-1.0.typelib,Gvc-1.0.typelib,libgutils.so,libgvc.so})
 warn_files_tests+=(/usr/local/share/icons/OneUI{,-dark,-light})
-warn_files_tests+=(/usr/local/share/icons/Bibata-Modern-Classic)
 warn_files_tests+=(/usr/local/bin/{LaTeX,res})
 for i in ${warn_files_tests[@]}; do
   echo $i
