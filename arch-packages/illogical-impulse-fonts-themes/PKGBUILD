@@ -6,6 +6,7 @@ arch=(any)
 license=(None)
 depends=(
   apple-fonts
+  apple_cursor
   adw-gtk-theme-git
   breeze
   breeze-plus
