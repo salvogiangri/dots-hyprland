@@ -204,7 +204,7 @@ Singleton {
             property string title: "SF Pro Display"
             property string iconMaterial: "Material Symbols Rounded"
             property string iconNerd: "SpaceMono NF"
-            property string monospace: "JetBrains Mono NF"
+            property string monospace: "MesloLGS NF"
             property string reading: "Readex Pro"
         }
         property QtObject pixelSize: QtObject {
