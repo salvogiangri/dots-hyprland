@@ -19,8 +19,8 @@ depends=(
   matugen-bin
   starship
   ttf-gabarito-git
-  ttf-jetbrains-mono-nerd
   ttf-material-symbols-variable-git
+  ttf-meslo-nerd-font-powerlevel10k
   ttf-readex-pro
   ttf-rubik-vf
   ttf-twemoji
