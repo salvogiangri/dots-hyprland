@@ -13,12 +13,10 @@ depends=(
   colloid-icon-theme-git
   darkly-bin
   eza
-  fish
   fontconfig
   kde-material-you-colors
   kitty
   matugen-bin
-  starship
   ttf-apple-emoji
   ttf-material-symbols-variable-git
   ttf-meslo-nerd-font-powerlevel10k
