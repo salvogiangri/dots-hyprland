@@ -15,7 +15,6 @@ depends=(
   kde-material-you-colors
   kitty
   matugen-bin
-  otf-space-grotesk
   starship
   ttf-gabarito-git
   ttf-jetbrains-mono-nerd
