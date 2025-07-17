@@ -55,21 +55,6 @@ install-Rubik (){
 }
 
 # Not for Arch(based) distro.
-install-Gabarito (){
-  x mkdir -p $base/cache/Gabarito
-  x cd $base/cache/Gabarito
-  try git init -b main
-  try git remote add origin https://github.com/naipefoundry/gabarito.git
-  x git pull origin main && git submodule update --init --recursive
-	x sudo mkdir -p /usr/local/share/fonts/TTF/
-	x sudo cp fonts/ttf/Gabarito*.ttf /usr/local/share/fonts/TTF/
-	x sudo mkdir -p /usr/local/share/licenses/ttf-gabarito/
-	x sudo cp OFL.txt /usr/local/share/licenses/ttf-gabarito/LICENSE
-  x fc-cache -fv
-  x cd $base
-}
-
-# Not for Arch(based) distro.
 install-OneUI (){
   x mkdir -p $base/cache/OneUI4-Icons
   x cd $base/cache/OneUI4-Icons
