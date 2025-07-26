@@ -119,15 +119,6 @@ Scope {
                         root.searchingText = searchingText;
                     }
                 }
-
-                Loader {
-                    id: overviewLoader
-                    active: GlobalStates.overviewOpen
-                    sourceComponent: OverviewWidget {
-                        panelWindow: root
-                        visible: (root.searchingText == "")
-                    }
-                }
             }
         }
     }
