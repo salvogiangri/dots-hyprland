@@ -186,7 +186,7 @@ Singleton {
                     property bool useNerdFont: false
                 }
                 property JsonObject weather: JsonObject {
-                    property bool enable: false
+                    property bool enable: true
                     property bool enableGPS: true // gps based location
                     property string city: "" // When 'enableGPS' is false
                     property bool useUSCS: false // Instead of metric (SI) units
@@ -267,7 +267,7 @@ Singleton {
             }
 
             property JsonObject overview: JsonObject {
-                property bool enable: true
+                property bool enable: false
                 property real scale: 0.18 // Relative to screen size
                 property real rows: 2
                 property real columns: 5
