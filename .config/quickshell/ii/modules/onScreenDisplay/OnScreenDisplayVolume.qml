@@ -14,6 +14,7 @@ Scope {
     id: root
     property string protectionMessage: ""
     property var focusedScreen: Quickshell.screens.find(s => s.name === Hyprland.focusedMonitor?.name)
+    property bool firstUse: true
 
     function triggerOsd() {
         GlobalStates.osdVolumeOpen = true
@@ -41,10 +42,18 @@ Scope {
     Connections { // Listen to volume changes
         target: Audio.sink?.audio ?? null
         function onVolumeChanged() {
+            if (firstUse) {
+                firstUse = false
+                return
+            }
             if (!Audio.ready) return
             root.triggerOsd()
         }
         function onMutedChanged() {
+            if (firstUse) {
+                firstUse = false
+                return
+            }
             if (!Audio.ready) return
             root.triggerOsd()
         }

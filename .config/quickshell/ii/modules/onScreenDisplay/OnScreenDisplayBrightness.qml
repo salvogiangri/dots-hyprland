@@ -14,6 +14,7 @@ Scope {
     id: root
     property var focusedScreen: Quickshell.screens.find(s => s.name === Hyprland.focusedMonitor?.name)
     property var brightnessMonitor: Brightness.getMonitorForScreen(focusedScreen)
+    property bool firstUse: true
 
     function triggerOsd() {
         GlobalStates.osdBrightnessOpen = true
@@ -41,6 +42,10 @@ Scope {
     Connections {
         target: Brightness
         function onBrightnessChanged() {
+            if (firstUse) {
+                firstUse = false
+                return
+            }
             if (!root.brightnessMonitor.ready) return
             root.triggerOsd()
         }
