@@ -12,7 +12,7 @@
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Hardware──────────────────────┐"
+            "format": "\u001b[90m┌───────────────────── Hardware ─────────────────────┐"
         },
         {
             "type": "host",
@@ -51,7 +51,7 @@
         "break",
         {
             "type": "custom",
-            "format": "\u001b[90m┌──────────────────────Software──────────────────────┐"
+            "format": "\u001b[90m┌───────────────────── Software ─────────────────────┐"
         },
         {
             "type": "os",
@@ -59,13 +59,18 @@
             "keyColor": "yellow"
         },
         {
-            "type": "battery",
-            "key": "  ├─ Battery",
+            "type": "kernel",
+            "key": "  ├─ Kernel",
             "keyColor": "yellow"
         },
         {
             "type": "uptime",
             "key": "  ├─ Uptime",
+            "keyColor": "yellow"
+        },
+        {
+            "type": "wm",
+            "key": "  ├─ WM",
             "keyColor": "yellow"
         },
         {
