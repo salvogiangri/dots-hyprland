@@ -8,68 +8,6 @@ import qs.modules.common.widgets
 ContentPage {
     forceWidth: true
     ContentSection {
-        title: Translation.tr("Policies")
-
-        ConfigRow {
-            ColumnLayout {
-                // Weeb policy
-                ContentSubsectionLabel {
-                    text: Translation.tr("Weeb")
-                }
-                ConfigSelectionArray {
-                    currentValue: Config.options.policies.weeb
-                    configOptionName: "policies.weeb"
-                    onSelected: newValue => {
-                        Config.options.policies.weeb = newValue;
-                    }
-                    options: [
-                        {
-                            displayName: Translation.tr("No"),
-                            value: 0
-                        },
-                        {
-                            displayName: Translation.tr("Yes"),
-                            value: 1
-                        },
-                        {
-                            displayName: Translation.tr("Closet"),
-                            value: 2
-                        }
-                    ]
-                }
-            }
-
-            ColumnLayout {
-                // AI policy
-                ContentSubsectionLabel {
-                    text: Translation.tr("AI")
-                }
-                ConfigSelectionArray {
-                    currentValue: Config.options.policies.ai
-                    configOptionName: "policies.ai"
-                    onSelected: newValue => {
-                        Config.options.policies.ai = newValue;
-                    }
-                    options: [
-                        {
-                            displayName: Translation.tr("No"),
-                            value: 0
-                        },
-                        {
-                            displayName: Translation.tr("Yes"),
-                            value: 1
-                        },
-                        {
-                            displayName: Translation.tr("Local only"),
-                            value: 2
-                        }
-                    ]
-                }
-            }
-        }
-    }
-
-    ContentSection {
         title: Translation.tr("Bar")
 
         ConfigRow {
@@ -157,61 +95,6 @@ ContentPage {
                     }
                     StyledToolTip {
                         content: Translation.tr("Note: turning off can hurt readability")
-                    }
-                }
-            }
-        }
-
-        ContentSubsection {
-            title: Translation.tr("Buttons")
-            ConfigRow {
-                uniform: true
-                ConfigSwitch {
-                    text: Translation.tr("Screen snip")
-                    checked: Config.options.bar.utilButtons.showScreenSnip
-                    onCheckedChanged: {
-                        Config.options.bar.utilButtons.showScreenSnip = checked;
-                    }
-                }
-                ConfigSwitch {
-                    text: Translation.tr("Color picker")
-                    checked: Config.options.bar.utilButtons.showColorPicker
-                    onCheckedChanged: {
-                        Config.options.bar.utilButtons.showColorPicker = checked;
-                    }
-                }
-            }
-            ConfigRow {
-                uniform: true
-                ConfigSwitch {
-                    text: Translation.tr("Mic toggle")
-                    checked: Config.options.bar.utilButtons.showMicToggle
-                    onCheckedChanged: {
-                        Config.options.bar.utilButtons.showMicToggle = checked;
-                    }
-                }
-                ConfigSwitch {
-                    text: Translation.tr("Keyboard toggle")
-                    checked: Config.options.bar.utilButtons.showKeyboardToggle
-                    onCheckedChanged: {
-                        Config.options.bar.utilButtons.showKeyboardToggle = checked;
-                    }
-                }
-            }
-            ConfigRow {
-                uniform: true
-                ConfigSwitch {
-                    text: Translation.tr("Dark/Light toggle")
-                    checked: Config.options.bar.utilButtons.showDarkModeToggle
-                    onCheckedChanged: {
-                        Config.options.bar.utilButtons.showDarkModeToggle = checked;
-                    }
-                }
-                ConfigSwitch {
-                    text: Translation.tr("Performance Profile toggle")
-                    checked: Config.options.bar.utilButtons.showPerformanceProfileToggle
-                    onCheckedChanged: {
-                        Config.options.bar.utilButtons.showPerformanceProfileToggle = checked;
                     }
                 }
             }
