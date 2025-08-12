@@ -196,6 +196,11 @@ Item { // Bar content region
                     Layout.alignment: Qt.AlignVCenter
                     Layout.fillWidth: true
                 }
+
+                BatteryIndicator {
+                    visible: UPower.displayDevice.isLaptopBattery
+                    Layout.alignment: Qt.AlignVCenter
+                }
             }
         }
 
