@@ -38,25 +38,6 @@ StyledPopup {
         anchors.centerIn: parent
         spacing: 4
 
-        // Date + Time row
-        RowLayout {
-            spacing: 5
-
-            MaterialSymbol {
-                fill: 0
-                font.weight: Font.Medium
-                text: "calendar_month"
-                iconSize: Appearance.font.pixelSize.large
-                color: Appearance.colors.colOnSurfaceVariant
-            }
-            StyledText {
-                horizontalAlignment: Text.AlignLeft
-                color: Appearance.colors.colOnSurfaceVariant
-                text: `${root.formattedDate} • ${root.formattedTime}`
-                font.weight: Font.Medium
-            }
-        }
-
         // Uptime row
         RowLayout {
             spacing: 5
