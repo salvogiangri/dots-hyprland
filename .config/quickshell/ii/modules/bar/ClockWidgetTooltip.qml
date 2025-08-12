@@ -7,8 +7,6 @@ import QtQuick.Layouts
 
 StyledPopup {
     id: root
-    property string formattedDate: Qt.locale().toString(DateTime.clock.date, "dddd, MMMM dd, yyyy")
-    property string formattedTime: DateTime.time
     property string formattedUptime: DateTime.uptime
     property string todosSection: getUpcomingTodos()
 
@@ -37,25 +35,6 @@ StyledPopup {
         id: columnLayout
         anchors.centerIn: parent
         spacing: 4
-
-        // Date + Time row
-        RowLayout {
-            spacing: 5
-
-            MaterialSymbol {
-                fill: 0
-                font.weight: Font.Medium
-                text: "calendar_month"
-                iconSize: Appearance.font.pixelSize.large
-                color: Appearance.colors.colOnSurfaceVariant
-            }
-            StyledText {
-                horizontalAlignment: Text.AlignLeft
-                color: Appearance.colors.colOnSurfaceVariant
-                text: `${root.formattedDate}`
-                font.weight: Font.Medium
-            }
-        }
 
         // Uptime row
         RowLayout {
